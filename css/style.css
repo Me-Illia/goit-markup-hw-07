@@ -40,20 +40,6 @@ img {
   margin: auto;
 }
 
-.background-logo-hero {
-  max-width: 1440px;
-  margin: 0 auto;
-  background-color: var(--text-headersecond-color);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 button {
   font-family: inherit;
   font-size: 16px;
@@ -226,12 +212,107 @@ h2 {
 }
 
 /* ================/hamburger menu ======================*/
-
-.hero {
-  text-align: center;
+/* .hero {
 
   padding-top: 188px;
   padding-bottom: 188px;
+} */
+
+.background-logo-hero {
+  text-align: center;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: var(--text-headersecond-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/mobile/people-office-hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+  .background-logo-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/mobile/people-office-hero-mobile.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .background-logo-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/mobile/people-office-hero-@2xmobile.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .background-logo-hero {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/tablet/people-office-hero-tablet.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .background-logo-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/tablet/people-office-hero-@2xtablet.jpg');
+    }
+  }
+}
+
+/* @media screen and (min-width: 768px) {
+  .background-logo-hero {
+    max-width: 1600px;
+    padding-top: 112px;
+    padding-bottom: 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/people-office-hero-tablet.jpg);
+  }
+} */
+
+@media screen and (min-width: 769px) {
+  .background-logo-hero {
+    max-width: 1600px;
+    padding-top: 112px;
+    padding-bottom: 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-hero.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .background-logo-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/people-office-hero-@2xdesctop.jpg');
+    }
+  }
 }
 
 .under-hero-section {

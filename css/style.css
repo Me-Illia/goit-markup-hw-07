@@ -190,6 +190,8 @@ h2 {
 }
 
 .main-burgermenu-add-li > .main-tel {
+  display: block;
+  width: 353px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1px;

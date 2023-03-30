@@ -157,10 +157,13 @@ h2 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.burger-menu-link:hover,
-.burger-menu-link:focus {
+.burger-link-contacts {
   color: var(--hover-btn-portfolio-color);
 }
+/* .burger-menu-link:hover,
+.burger-menu-link:focus {
+  color: ;
+} */
 
 /*---- приклад бургера який тягнеться до низу і текст не злипається, і має відступ 15px--- */
 .burger-menu {
@@ -170,9 +173,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-.burger-menu-link:last-child {
-  margin: 0 0 auto;
-}
 /* ----------------------------------------------------------------------------------------- */
 /* .burger-menu .burger-li + .burger-li {
   margin-top: 40px;
@@ -185,7 +185,7 @@ h2 {
   padding-bottom: 40px;
 }
 .main-burgermenu-add-li:last-child {
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .main-burgermenu-add-li > .main-tel {
@@ -196,6 +196,7 @@ h2 {
   line-height: 1.1px;
 
   text-transform: capitalize;
+  color: var(--brand-logo-color);
 }
 
 .main-burgermenu-add-li > .main-mail {
@@ -723,6 +724,11 @@ address {
   color: var(--footer-text-color);
 }
 
+.text-footer-logo,
+.social-footer-list {
+  margin-bottom: 72px;
+}
+
 .main-footer-logo > span {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -782,6 +788,10 @@ address {
   row-gap: 24px;
 }
 
+.footer-subscribe-li {
+  width: 100%;
+}
+
 .contact-form-input-footer {
   padding-left: 16px;
   background: none;
@@ -789,7 +799,7 @@ address {
   color: var(--text-header-first-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 398px;
+  width: 100%;
   height: 40px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1145,6 +1155,11 @@ address {
     justify-content: unset;
     row-gap: unset;
     column-gap: 24px;
+  }
+
+  .text-footer-logo,
+  .social-footer-list {
+    margin-bottom: unset;
   }
 }
 
